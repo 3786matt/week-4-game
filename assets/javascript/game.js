@@ -7,7 +7,7 @@ var match=0;
 var wins = 0;
 var losses = 0;
 var subMessage; 
-var crystal = {feature: Math.floor(Math.random()*11) + 1, feature1: Math.floor(Math.random()*11) +1, feature2: Math.floor(Math.random()*11)+1, feature3: Math.floor(Math.random()*11)+1};
+var crystal = {feature: Math.floor(Math.random()*12 + 1), feature1: Math.floor(Math.random()*12 +1), feature2: Math.floor(Math.random()*12+1), feature3: Math.floor(Math.random()*12+1)};
 var total=0;
 var game = true;
 var audio = new Audio('..Audience_Applause.mp3');
@@ -105,7 +105,7 @@ $("#reset").on("click", function() {
 	$("#score1").html("TOTAL: " + total);
 	random1();
 	$('#subMessage').html(" ");
-	crystal.feature3;
+	// crystal.feature3;
 	$('.btn, #header').animate({
 			opacity: '1.0'
 		});
@@ -115,7 +115,7 @@ $("#reset").on("click", function() {
 });
 
 $("#reset").on("click", function() {
-	crystal = {feature: Math.floor(Math.random()*5), feature1: Math.floor(Math.random()*10), feature2: Math.floor(Math.random()*20), feature3: Math.floor(Math.random()*25)};
+	crystal = {feature: Math.floor(Math.random()*12 +1), feature1: Math.floor(Math.random()*12+1), feature2: Math.floor(Math.random()*12+1), feature3: Math.floor(Math.random()*12+1)};
 
 });
 
