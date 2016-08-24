@@ -7,7 +7,7 @@ var match=0;
 var wins = 0;
 var losses = 0;
 var subMessage; 
-var crystal = {feature: Math.floor(Math.random()*5), feature1: Math.floor(Math.random()*10), feature2: Math.floor(Math.random()*20), feature3: Math.floor(Math.random()*25)};
+var crystal = {feature: Math.floor(Math.random()*5), feature1: Math.floor(Math.random()*10), feature2: Math.floor(Math.random()*12), feature3: Math.floor(Math.random()*7)};
 var total=0;
 var game = true;
 var audio = new Audio('..Audience_Applause.mp3');
