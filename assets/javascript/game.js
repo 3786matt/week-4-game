@@ -7,13 +7,10 @@ var match=0;
 var wins = 0;
 var losses = 0;
 var subMessage; 
-var crystal = {feature: Math.floor(Math.random()*5), feature1: Math.floor(Math.random()*10), feature2: Math.floor(Math.random()*12), feature3: Math.floor(Math.random()*7)};
+var crystal = {feature: Math.floor(Math.random()*11) + 1, feature1: Math.floor(Math.random()*11) +1, feature2: Math.floor(Math.random()*11)+1, feature3: Math.floor(Math.random()*11)+1};
 var total=0;
 var game = true;
 var audio = new Audio('..Audience_Applause.mp3');
-
-
-
 
 function random1() {
 	match = Math.floor(Math.random() * 100 + 10);
@@ -60,7 +57,7 @@ $("#ins").on("click", function() {
 $("#button1").on("click", function() {
 	if(game==true){
 	total = crystal.feature + total;
-	$("#score1").html("Your total score is: " + total);
+	$("#score1").html("TOTAL: " + total);
 	console.log(total);
 	status();
 
@@ -84,7 +81,7 @@ $("#button2").on("click", function(){
 $("#button3").on("click", function() {
 	if(game==true){
 	total = crystal.feature2 + total;
-	$("#score1").html("Your total score is: " + total);
+	$("#score1").html("TOTAL: " + total);
 	console.log(total);
 	status();
 
@@ -95,7 +92,7 @@ $("#button3").on("click", function() {
 $("#button4").on("click", function() {
 	if(game==true){
 	total = crystal.feature3 + total;
-	$("#score1").html("Your total score is: " + total);
+	$("#score1").html("TOTAL: " + total);
 	console.log(total);
 	status();
 
@@ -105,7 +102,7 @@ $("#button4").on("click", function() {
 
 $("#reset").on("click", function() {
 	total=0;
-	$("#score1").html("Your total score is: " + total);
+	$("#score1").html("TOTAL: " + total);
 	random1();
 	$('#subMessage').html(" ");
 	crystal.feature3;
